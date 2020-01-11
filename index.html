@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Webagency</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen">
     <script src="https://kit.fontawesome.com/5fe9b3ed11.js" crossorigin="anonymous"></script>
 </head>
 
@@ -12,16 +12,16 @@
     <img src="images/logo.png" alt="logo" class="logo">
     <nav>
         <ul class="menu">
-            <li class="menu__items"><a href="" class="menu__item__link">Accueil</a></li>
-            <li class="menu__items"><a href="" class="menu__item__link">Services</a></li>
-            <li class="menu__items"><a href="" class="menu__item__link">Portfolio</a></li>
-            <li class="menu__items"><a href="" class="menu__item__link">Contact</a></li>
+            <li class="menu__items"><a href="#accueil" class="menu__item__link">Accueil</a></li>
+            <li class="menu__items"><a href="#services" class="menu__item__link">Services</a></li>
+            <li class="menu__items"><a href="#projet" class="menu__item__link">Portfolio</a></li>
+            <li class="menu__items"><a href="#contact" class="menu__item__link">Contact</a></li>
         </ul>
         </div>
     </nav>
 </header>
 
-<section class="slider">
+<section class="slider main" id="accueil">
     <a href="#slide1" class="slider1__bouton__droite"><i class="fas fa-angle-left fa-2x"></i></a>
     <a href="#slide2" class="slider1__bouton__gauche"><i class="fas fa-angle-right fa-2x"></i></a>
     <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS <br>VOS PROJECTS !</h1>
@@ -30,11 +30,13 @@
 
     <img id="slide1" src="images/slider/bg1.jpg" alt="slide1">
     <img id="slide2" src="images/slider/bg2.jpg" alt="slide2">
+    <div class="barre_droite_slider"></div>
+    <div class="barre_gauche_slider"></div>
 </section>
 
 
 
-<section class="services">
+<section class="services main" id="services">
     <article>
         <div class="services__titre">
             <h2 class="h2__services">Nos services</h2>
@@ -43,11 +45,10 @@
                 <div class="cercle__titre"></div>
 
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nulla, ultricies imperdiet ligula at, volutpat mattis libero. Etiam ac.
-            </p>
+            <p>WebAgency vous accompagne dans toutes les étapes de la création de votre site web pour que le résultat vous corresponde a 100 % à travers nos différents savoir-faire</p>
         </div>
         <div class="services__corp">
-            <div class="services__image"><img src="images/main-feature.png" alt=""></div>
+            <div class="services__image"><img class="image_service" src="images/main-feature.png" alt=""></div>
             <div class="services__text">
                 <div class="icon__ux_design__cerlce services__cercle_1 ">
                     <i class="fas fa-chart-line icon__ux_design fa-2x"></i>
@@ -55,22 +56,19 @@
                 </div>
 
                 <h3>UX design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id velit tempor, consequat lectus id, cursus enim. Cras molestie nec arcu at dictum. Phasellus dignissim.
-                </p>
+                <p>Nous fessons en sorte que votre site web réponde à toutes les attentes de votre visiteur pour que sont expérience soit la meilleure.</p>
                 <div class="icon__ux_design__cerlce services__cercle_2">
                     <i class="fas fa-cubes icon__ux_design fa-2x"></i>
                     <div class="icon__ux_design_point"></div>
                 </div>
                 <h3>UI design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id velit tempor, consequat lectus id, cursus enim. Cras molestie nec arcu at dictum. Phasellus dignissim.
-                </p>
+                <p>Nous vous proposons un design clair et intuitif pour une navigation optimale à travers une charte graphique qui répond au besoin de votre visiteur.</p>
                 <div class="icon__ux_design__cerlce services__cercle_3">
                     <i class="fas fa-chart-pie icon__ux_design fa-2x"></i>
                     <div class="icon__ux_design_point"></div>
                 </div>
                 <h3>SEO</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id velit tempor, consequat lectus id, cursus enim. Cras molestie nec arcu at dictum. Phasellus dignissim.
-                </p>
+                <p>Nous optimisons le référencement de votre site pour améliorer sa visibilité sur les moteurs de recherche pour que votre site soit visible pour vos futurs clients.</p>
 
             </div>
         </div>
@@ -78,11 +76,11 @@
 </section>
 
 
-<section class="projets">
+<section class="projets main" id="projet">
 
     <div class="entete">
         <h2>Nos projets</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id velit tempor, consequat lectus id, cursus enim. Cras molestie nec arcu at dictum. Phasellus dignissim.</p>
+        <p>Voici des exemples de nos différentes réalisations classées par thématique pour vous faire une idée de notre savoir-faire.</p>
     </div>
     <input type="radio" name="menu_projets" id="bt1" checked ><label class='nav_projets' for="bt1">All Works</label>
     <input type="radio" name="menu_projets" id="bt2"><label class='nav_projets' for="bt2">Creative</label>
@@ -90,47 +88,221 @@
     <input type="radio" name="menu_projets" id="bt4"><label class='nav_projets' for="bt4">Portfolio</label>
 
     <div class="projets__all_works__images" id="all_works">
-        <img src="images/portfolio/01.jpg" alt="image1">
-        <img src="images/portfolio/02.jpg" alt="image2">
-        <img src="images/portfolio/03.jpg" alt="image3">
-        <img src="images/portfolio/04.jpg" alt="image4">
-        <img src="images/portfolio/05.jpg" alt="image5">
-        <img src="images/portfolio/06.jpg" alt="image6">
-        <img src="images/portfolio/07.jpg" alt="image7">
-        <img src="images/portfolio/08.jpg" alt="image8">
+        <div class="image_portfolio">
+            <img src="images/portfolio/01.jpg" alt="image1">
+
+            <div class="calc_image">
+                <h4>Réalisiation pour Amazon</h4>
+                <p>Projet site web marchand</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/02.jpg" alt="image2">
+            <div class="calc_image">
+                <h4>test</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/03.jpg" alt="image3">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/04.jpg" alt="image4">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/05.jpg" alt="image5">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+        <div class="image_portfolio">
+            <img src="images/portfolio/06.jpg" alt="image6">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/07.jpg" alt="image7">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/08.jpg" alt="image8">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
     </div>
+
     <div class="projets__creative__images" id="creative">
-        <img src="images/portfolio/01.jpg" alt="image1">
-        <img src="images/portfolio/02.jpg" alt="image2">
-        <img src="images/portfolio/03.jpg" alt="image3">
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/01.jpg" alt="image1">
+            <div class="calc_image">
+                <h4>Réalisiation pour Amazon</h4>
+                <p>Projet site web marchand</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/02.jpg" alt="image2">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/03.jpg" alt="image3">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
     </div>
+
     <div class="projets__corporate__images" id="corporate">
-        <img src="images/portfolio/04.jpg" alt="image4">
-        <img src="images/portfolio/05.jpg" alt="image5">
-        <img src="images/portfolio/06.jpg" alt="image6">
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/04.jpg" alt="image4">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/05.jpg" alt="image5">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/06.jpg" alt="image6">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
     </div>
 
     <div class="projets__portfolio__images" id="portfolio">
-        <img src="images/portfolio/07.jpg" alt="image7">
-        <img src="images/portfolio/08.jpg" alt="image8">
-        <img src="images/portfolio/04.jpg" alt="image4">
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/07.jpg" alt="image7">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/08.jpg" alt="image8">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
+
+        <div class="image_portfolio">
+            <img src="images/portfolio/04.jpg" alt="image4">
+            <div class="calc_image">
+                <h4>Portfolio item 4</h4>
+                <p>ceci est une test</p>
+                <div class="rond_hover_projet"></div>
+                <i class="far fa-eye eye_hover_projet"></i>
+            </div>
+        </div>
 
     </div>
 </section>
 
 
-<section class="contact">
+<section class="contact main" id="contact">
     <article>
         <div class="contact__bloc">
-            <div class="formulaire">
-                <h3>Contact Info</h3>
+            <div class="filtre_bleu_map">
             </div>
+            <div class="formulaire">
+                <h3 class="titre_formulaire">Contact Info</h3>
+                <p>
+                    <em>WebAgency SAS</em><br>25 Rue d'Hauteville 75010 Paris<br>Tel : 0102030405
+                </p>
+
+                <form method="post" action="traitement.php">
+                    <p>
+                        <input class="zone_formulaire" type="text" name="name" id="name" placeholder="Name" />
+                        <input class="zone_formulaire" type="text" name="email" id="email" placeholder="Email" />
+                        <input class="zone_formulaire" type="text" name="sujet" id="sujet" placeholder="Subject"/>
+                        <textarea class="zone_formulaire message_formulaire" name="message" id="message" placeholder="Message"></textarea>
+                        <input class="bouton_formulaire" type="submit" value="Send Message" />
+                    </p>
+                </form>
+
+            </div>
+
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2243857691615!2d2.349439360361367!3d48.872998854215496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1577370884082!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
 
             </iframe>
 
         </div>
-        <br><br><br><br><br><br><br><br><br>
+
+
+
     </article>
 </section>
 
