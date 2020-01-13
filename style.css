@@ -2,36 +2,28 @@ html ,body
 {
     margin: 0;
     padding: 0;
+
 }
 .main
 {
     width: 80vw;
     margin: auto;
 }
-h1
-{
-    position: absolute;
-    z-index: 4;
-    color: white;
-    left: 80px;
-    margin-top: 6.5em;
-    font-family: Roboto;
-    font-size: 2.2em;
-}
+
 h2
 {
     font-size: 3em;
     text-align: center;
-    font-family: "Roboto Black";
+    font-family: "Roboto Black", sans-serif;
     text-transform: uppercase;
 }
 h3
 {
-    font-family: "Roboto Black";
+    font-family: "Roboto Black", sans-serif;
 }
 p
 {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     opacity: 0.7;
 }
 strong
@@ -59,10 +51,16 @@ ul
 {
     padding:0px;
     margin: 0px;
+
 }
 
 /* menu */
 
+.masque_header
+{
+    height: 80px;
+    width: 100%;
+}
 .menu
 {
     display: flex;
@@ -88,41 +86,55 @@ ul
     text-decoration: none;
     margin-top: -3px;
 }
+.logo
+{
+
+}
 
 /*slider*/
+
 
 .slider
 {
     position: relative;
     z-index: 3;
     margin: auto;
-    min-width: 1024px;
-    padding-top: 1px;
-    margin-bottom: 667px;
-    margin-top: -100px;
+    padding-bottom: 27%;
+    /*margin-top: -100px;
+    padding-top: 100px;*/
 }
-.slider>p
+h1
 {
-    font-family: Roboto;
     position: absolute;
     z-index: 4;
     color: white;
     left: 80px;
-    margin-top: 20.5em;
-    font-size: 1em;
+    bottom: 37%;
+    font-family: Roboto, sans-serif;
+    font-size: 2vw;
+}
+.slider>p
+{
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    z-index: 4;
+    color: white;
+    left: 80px;
+    bottom: 34%;
+    font-size: 1vw;
 }
 .plus_info
 {
     left: 80px;
-    margin-top: 23em;
+    bottom: 26%;
     border-bottom: 2px solid #1271ff;
-    padding: 10px 15px 10px 15px;
+    padding: 0.625em;
     background-color: #36A7C2;
     color: white;
     border-radius: 3px;
     text-decoration:none;
-    font-size: 1em;
-    font-family: Roboto;
+    font-size: 1vw;
+    font-family: Roboto, sans-serif;
 }
 .slider1__bouton__droite
 {
@@ -142,10 +154,7 @@ ul
     position: absolute;
     z-index: 2;
 }
-.slider
-{
-    padding-top: 100px;
-}
+
 #slide1
 {
     position: absolute;
@@ -153,8 +162,8 @@ ul
     height: auto;
     opacity: 100%;
     margin: auto;
-    min-width: 1024px;
-    padding-top: 100px;
+    /*padding-top: 80px;*/
+    bottom: 0;
 }
 #slide2
 {
@@ -163,8 +172,8 @@ ul
     height: auto;
     opacity: 0;
     margin: auto;
-    min-width: 1024px;
-    padding-top: 100px;
+    /*padding-top: 80px;*/
+    bottom: 0;
 }
 #slide2:target
 {
@@ -189,14 +198,15 @@ ul
 
 /* services */
 
-.services
-{
-    margin-top: 90px;
-}
+
 .services__titre
 {
     text-align: center;
-    width: 40%;
+    margin: auto;
+}
+.services__titre > p
+{
+    width: 50%;
     margin: auto;
 }
 .services__corp
@@ -213,8 +223,11 @@ ul
 }
 .cercle_trait
 {
-    position: relative;
-    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 0 13px 0;
 }
 .cercle__titre
 {
@@ -224,20 +237,19 @@ ul
     border-radius: 100%;
     margin: auto;
     border: 7px solid white;
-    position: absolute;
-    top: 4px;
-    right: 305px;
+    margin: 0;
 }
 .trait
 {
-    width: 20%;
-    height: 0.5px;
+    width: 10%;
+    height: 1px;
     border: none;
     background-color: lightgrey;
+    margin: 0;
 }
 .h2__services
 {
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 .icon__ux_design__cerlce
 {
@@ -296,6 +308,11 @@ ul
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background: #F5F5F5;
+}
+.titre__projets
+{
+    margin-bottom: 0;
 }
 .projets .entete
 {
@@ -306,6 +323,7 @@ ul
     text-align: center;
     margin: auto;
     width: 50%;
+    margin-top: 8px;
 }
 .nav_projets
 {
@@ -373,7 +391,7 @@ ul
     padding: 0 0 0 10px;
     text-align: left;
     color:  white;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     opacity: 1;
 }
 .calc_image h4
@@ -403,14 +421,14 @@ input[type=radio]:checked + label {
     position: relative;
     color: white;
     background-color: #36A7C2;
-    border-bottom: 2px solid #1271ff;
+    border-bottom: 2px solid #468CAD;
 }
 input[type=radio]:checked + label:after
 {
     display: block;
     content: "";
     border: 8px solid transparent;
-    border-top-color: #1271ff;
+    border-top-color: #468CAD;
     position: absolute;
     bottom: -16px;
     left: 0;
@@ -505,7 +523,7 @@ input[type=radio]:checked + label:after
 }
 ::placeholder
 {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 .bouton_formulaire
 {
@@ -517,12 +535,12 @@ input[type=radio]:checked + label:after
     border-radius: 3px;
     text-decoration:none;
     font-size: 1em;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     margin: 5px 0 0 18px;
 }
 
 /*responsive*/
-
+/*
 @media screen and (max-width: 1024px)
 {
     .slider
@@ -578,162 +596,9 @@ input[type=radio]:checked + label:after
         width: 100%;
         margin-top: 50px;
     }
-}
+}*/
 
 
 
 
-/* polices*/
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Light.woff2') format('woff2'),
-    url('Roboto-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GLYPHICONS Halflings';
-    src: url('GLYPHICONSHalflings-Regular.woff2') format('woff2'),
-    url('GLYPHICONSHalflings-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Black.woff2') format('woff2'),
-    url('Roboto-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-BlackItalic.woff2') format('woff2'),
-    url('Roboto-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-MediumItalic.woff2') format('woff2'),
-    url('Roboto-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Thin.woff2') format('woff2'),
-    url('Roboto-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-ThinItalic.woff2') format('woff2'),
-    url('Roboto-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('FontAwesome.woff2') format('woff2'),
-    url('FontAwesome.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Italic.woff2') format('woff2'),
-    url('Roboto-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Medium.woff2') format('woff2'),
-    url('Roboto-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Regular.woff2') format('woff2'),
-    url('Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-LightItalic.woff2') format('woff2'),
-    url('Roboto-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-BoldItalic.woff2') format('woff2'),
-    url('Roboto-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Bold.woff2') format('woff2'),
-    url('Roboto-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('FontAwesome.woff2') format('woff2'),
-    url('FontAwesome.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'fontawesomeregular';
-    src: url('fontawesomeregular.woff2') format('woff2'),
-    url('fontawesomeregular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'glyphicons_halflingsregular';
-    src: url('glyphicons_halflingsregular.woff2') format('woff2'),
-    url('glyphicons_halflingsregular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GLYPHICONS Halflings';
-    src: url('GLYPHICONSHalflings-Regular.woff2') format('woff2'),
-    url('GLYPHICONSHalflings-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('FontAwesome.woff2') format('woff2'),
-    url('FontAwesome.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 

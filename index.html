@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Webagency</title>
     <link rel="stylesheet" href="style.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <script src="https://kit.fontawesome.com/5fe9b3ed11.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -21,18 +24,18 @@
     </nav>
 </header>
 
+<div class="masque_header"></div>
+
 <section class="slider main" id="accueil">
     <a href="#slide1" class="slider1__bouton__droite"><i class="fas fa-angle-left fa-2x"></i></a>
     <a href="#slide2" class="slider1__bouton__gauche"><i class="fas fa-angle-right fa-2x"></i></a>
-    <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS <br>VOS PROJECTS !</h1>
-    <p>Vous avez un projet web ? La WebAgency vous aide a le réaliser !</p>
+    <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS <br>VOS PROJETS !</h1>
+    <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
     <a href="" class="plus_info">Plus d'infos</a>
-
     <img id="slide1" src="images/slider/bg1.jpg" alt="slide1">
     <img id="slide2" src="images/slider/bg2.jpg" alt="slide2">
-    <div class="barre_droite_slider"></div>
-    <div class="barre_gauche_slider"></div>
 </section>
+
 
 
 
@@ -43,7 +46,7 @@
             <div class="cercle_trait">
                 <hr class="trait">
                 <div class="cercle__titre"></div>
-
+                <hr class="trait">
             </div>
             <p>WebAgency vous accompagne dans toutes les étapes de la création de votre site web pour que le résultat vous corresponde a 100 % à travers nos différents savoir-faire</p>
         </div>
@@ -56,7 +59,7 @@
                 </div>
 
                 <h3>UX design</h3>
-                <p>Nous fessons en sorte que votre site web réponde à toutes les attentes de votre visiteur pour que sont expérience soit la meilleure.</p>
+                <p>Nous fessons en sorte que votre site web réponde à toutes les attentes de votre visiteur pour que soit expérience soit la meilleure.</p>
                 <div class="icon__ux_design__cerlce services__cercle_2">
                     <i class="fas fa-cubes icon__ux_design fa-2x"></i>
                     <div class="icon__ux_design_point"></div>
@@ -79,7 +82,12 @@
 <section class="projets main" id="projet">
 
     <div class="entete">
-        <h2>Nos projets</h2>
+        <h2 class="titre__projets">Nos projets</h2>
+        <div class="cercle_trait">
+            <hr class="trait">
+            <div class="cercle__titre"></div>
+            <hr class="trait">
+        </div>
         <p>Voici des exemples de nos différentes réalisations classées par thématique pour vous faire une idée de notre savoir-faire.</p>
     </div>
     <input type="radio" name="menu_projets" id="bt1" checked ><label class='nav_projets' for="bt1">All Works</label>
@@ -91,9 +99,10 @@
         <div class="image_portfolio">
             <img src="images/portfolio/01.jpg" alt="image1">
 
+
             <div class="calc_image">
-                <h4>Réalisiation pour Amazon</h4>
-                <p>Projet site web marchand</p>
+                <h4>Réalisation pour Amazon</h4>
+                <p>Projet d’un site web marchand</p>
                 <div class="rond_hover_projet"></div>
                 <i class="far fa-eye eye_hover_projet"></i>
             </div>
