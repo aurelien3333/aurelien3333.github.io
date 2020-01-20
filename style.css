@@ -53,6 +53,28 @@ ul
     margin: 0px;
 }
 
+[type="radio"]:not(:checked),
+[type="radio"]:checked
+{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked
+{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+/*menu burger*/
+
+#bt_burger_off , #bt_burger_on , .item_menu_burger
+{
+    display: none;
+}
+
 /* menu */
 
 .masque_header
@@ -86,6 +108,10 @@ ul
 }
 
 /*slider*/
+.header_mobile
+{
+    display: none;
+}
 
 .slider
 {
@@ -118,9 +144,9 @@ h1
 {
     left: 10%;
     bottom: 34%;
-    border-bottom: 2px solid #1271ff;
-    padding: 0.625em;
-    background-color: #36A7C2;
+    border-bottom: 3px solid #468CAD;
+    padding: 0.500em;
+    background-color: #5CADD3;
     color: white;
     border-radius: 3px;
     text-decoration:none;
@@ -449,7 +475,7 @@ h1
     z-index: 100;
     font-size: 1.3em;
 }
-input[type=radio]:checked + label {
+.projets > input[type=radio]:checked + label {
     color:gray;
     font-style: normal;
     position: relative;
@@ -457,7 +483,7 @@ input[type=radio]:checked + label {
     background-color: #36A7C2;
     border-bottom: 2px solid #468CAD;
 }
-input[type=radio]:checked + label:after
+.projets > input[type=radio]:checked + label:after
 {
     display: block;
     content: "";
@@ -482,14 +508,6 @@ input[type=radio]:checked + label:after
 
 #all_works, #creative, #corporate ,#portfolio
 {display: none}
-
-[type="radio"]:not(:checked),
-[type="radio"]:checked
-{
-    position: absolute;
-    left: 0;
-    opacity: 0;
-}
 
 /* contact*/
 
@@ -564,7 +582,7 @@ input[type=radio]:checked + label:after
 .bouton_formulaire
 {
     border-width: 0;
-    border-bottom: 2px solid #1271ff;
+    border-bottom: 2px solid #468CAD;
     padding: 10px 15px 10px 15px;
     background-color: #36A7C2;
     color: white;
@@ -653,12 +671,40 @@ input[type=radio]:checked + label:after
 {
     header
     {
-        flex-direction: column;
+        flex-direction: row;
         padding-top: 30px;
         position: static;
         width: 100vw;
         max-width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+        position: relative;
     }
+    .header_mobile
+    {
+        display: block;
+    }
+    .header_mobile > p
+    {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .header_mobile > a
+    {
+        display: block;
+        margin: 0 14%;
+        text-align: center;
+        font-size: 1em;
+    }
+    .titre_header_mobile
+    {
+        text-align: center;
+        color: black;
+        position: static;
+        font-size: 1.5em;
+    }
+
+
     .slider ,.masque_header
     {
         display: none;
@@ -710,6 +756,89 @@ input[type=radio]:checked + label:after
         margin-left: 8px;
         margin-top: 22px;
     }
+
+    /* menu burger*/
+
+    input[type=checkbox]:checked + label #bt_burger_off
+    {
+        display: inline-block;
+
+    }
+    input[type=checkbox]:checked + label + .item_menu_burger
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        list-style: none;
+        width: 100%;
+        top: 90px;
+        right: 0px;
+        left: 0px;
+        background-color: #36A7C2;
+        z-index: 150;
+
+
+    }
+
+    .item_menu_burger li
+    {
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0px 5px 7px #468CAE;
+
+
+    }
+    .item_menu_burger li a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 32px;
+
+    }
+    input[type=checkbox]:checked + label #bt_burger_on
+     {
+         display: none;
+     }
+
+    #bt_burger_off
+    {
+        display: none;
+    }
+    #bt_burger_on
+    {
+        display: inline-block;
+    }
+    .menu
+    {
+        display: none;
+    }
+
+    #bt_burger_on , #bt_burger_off
+    {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .nav_projets
+    {
+        width: 100%;
+        max-width: 43%;
+    }
+    #bt1 + label ,#bt3 + label
+    {
+        border-radius: 5px 0 0 5px;
+    }
+    #bt2 + label ,#bt4 + label
+    {
+        border-radius:  0 5px 5px 0;
+    }
+
+
+
+
+
+
+
 }
 
 
