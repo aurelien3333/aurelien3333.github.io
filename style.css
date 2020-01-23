@@ -9,7 +9,6 @@ html ,body
     max-width: 100%;
     margin: auto;
 }
-
 h2
 {
     font-size: 3em;
@@ -53,13 +52,6 @@ ul
     margin: 0px;
 }
 
-[type="radio"]:not(:checked),
-[type="radio"]:checked
-{
-    position: absolute;
-    left: 0;
-    opacity: 0;
-}
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked
 {
@@ -112,7 +104,6 @@ ul
 {
     display: none;
 }
-
 .slider
 {
     position: relative;
@@ -475,7 +466,8 @@ h1
     z-index: 100;
     font-size: 1.3em;
 }
-.projets > input[type=radio]:checked + label {
+.projets > input[type=radio]:checked + label
+{
     color:gray;
     font-style: normal;
     position: relative;
@@ -505,9 +497,17 @@ h1
     flex-wrap: wrap;
     justify-content: center;
 }
-
 #all_works, #creative, #corporate ,#portfolio
-{display: none}
+{
+    display: none
+}
+[type="radio"]:not(:checked),
+[type="radio"]:checked
+{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
 
 /* contact*/
 
@@ -619,7 +619,8 @@ h1
         width: 44%;
         min-width: auto;
     }
-    .formulaire {
+    .formulaire
+    {
         width: 95%;
         top: 103%;
         max-width: none;
@@ -636,7 +637,8 @@ h1
         left: 7%;
         font-size: 1.5vw;
     }
-    .plus_info {
+    .plus_info
+    {
         left: 7%;
         bottom: 33%;
         font-size: 1.5vw;
@@ -703,8 +705,6 @@ h1
         position: static;
         font-size: 1.5em;
     }
-
-
     .slider ,.masque_header
     {
         display: none;
@@ -762,7 +762,6 @@ h1
     input[type=checkbox]:checked + label #bt_burger_off
     {
         display: inline-block;
-
     }
     input[type=checkbox]:checked + label + .item_menu_burger
     {
@@ -776,30 +775,28 @@ h1
         left: 0px;
         background-color: #36A7C2;
         z-index: 150;
-
-
     }
-
     .item_menu_burger li
     {
         text-align: center;
-        padding: 20px;
         box-shadow: 0px 5px 7px #468CAE;
-
-
     }
     .item_menu_burger li a
     {
         text-decoration: none;
         color: white;
         font-size: 32px;
-
+        display: inline-block;
+        padding: 20px 40%;
     }
     input[type=checkbox]:checked + label #bt_burger_on
      {
          display: none;
      }
-
+    input[type=checkbox]:checked + label header
+    {
+        padding-top: 400px;
+    }
     #bt_burger_off
     {
         display: none;
@@ -812,7 +809,6 @@ h1
     {
         display: none;
     }
-
     #bt_burger_on , #bt_burger_off
     {
         position: absolute;
@@ -832,13 +828,11 @@ h1
     {
         border-radius:  0 5px 5px 0;
     }
-
-
-
-
-
-
-
+    .header_mobile > img
+    {
+        width: 99%;
+        height: auto;
+    }
 }
 
 
