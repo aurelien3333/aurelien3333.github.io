@@ -221,7 +221,8 @@ h1
     position: absolute;
     z-index: 5;
     padding-top: 4px;
-    left: 0
+    left: 0;
+    bottom: 0;
 }
 #slide1:target ~ .barre_slider
 {
@@ -231,7 +232,8 @@ h1
     position: absolute;
     z-index: 5;
     padding: 0;
-    left: 0
+    left: 0;
+    bottom: 0;
 }
 #slide2:target ~ .barre_slider
 {
