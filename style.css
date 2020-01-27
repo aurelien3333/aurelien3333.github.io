@@ -790,7 +790,7 @@ h1
         color: white;
         font-size: 32px;
         display: inline-block;
-        padding: 20px 40%;
+        padding: 20px;
     }
     input[type=checkbox]:checked + label #bt_burger_on
      {
