@@ -604,6 +604,14 @@ h1
     {
         margin: 0;
     }
+    .menu__items
+    {
+        margin-left: 8px;
+    }
+    .menu
+    {
+        padding-right: 17px;
+    }
     .services__titre
     {
         padding-top: 50px;
@@ -670,6 +678,10 @@ h1
     .eye_hover_projet
     {
        display: none !important;
+    }
+    .logo
+    {
+        width: 48%;
     }
 }
 @media (max-width: 540px)
